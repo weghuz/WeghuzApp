@@ -43,7 +43,13 @@ namespace WebApplication1
                 })
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            services.AddAuthentication();
+            services.AddAuthentication()
+                .AddGoogle(options =>
+                {
+                    options.ClientId = "715726159109-nmj9umojreav9dv8sjqkp0dlcvoqbe7i.apps.googleusercontent.com";
+                    options.ClientSecret = "ZRr3uHGW5oR-efEhlzbp1LZ2";
+                    options.ReturnUrlParameter = "/auth";
+                });
             services.AddControllersWithViews();
         }
 
