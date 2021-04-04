@@ -4,13 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace WebApplication1.Data
+namespace Data.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class WeghuzappDBContext : IdentityDbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public WeghuzappDBContext(DbContextOptions<WeghuzappDBContext> options)
             : base(options)
         {
+
         }
     }
 }
