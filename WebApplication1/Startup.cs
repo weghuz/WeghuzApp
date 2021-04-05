@@ -49,6 +49,8 @@ namespace Data
                     options.ClientId = "715726159109-nmj9umojreav9dv8sjqkp0dlcvoqbe7i.apps.googleusercontent.com";
                     options.ClientSecret = "ZRr3uHGW5oR-efEhlzbp1LZ2";
                     options.ReturnUrlParameter = "/auth";
+                    options.CallbackPath = "/auth";
+                    options.AuthorizationEndpoint = "?prompt=consent";
                 });
             services.AddControllersWithViews();
         }

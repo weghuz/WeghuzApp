@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Data.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Data.Controllers
 {
@@ -18,7 +19,13 @@ namespace Data.Controllers
             _logger = logger;
         }
 
+
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Projects()
         {
             return View();
         }
