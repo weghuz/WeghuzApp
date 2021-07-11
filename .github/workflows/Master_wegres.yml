@@ -53,5 +53,5 @@ jobs:
       with:
         app-name: 'wegres'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e906f4e173984b2f88d171a13f6cc4d2 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8c72784c20bc440e8b4a960e638203e6 }}
         package: .
