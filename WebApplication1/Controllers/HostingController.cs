@@ -22,7 +22,6 @@ namespace WebApplication1.Controllers
         {
             switch(id)
             {
-                case "space": return File("/Images/space.jpg", "image/jpeg");
                 case "ratcard": return File("/Images/ratcard.png", "image/png");
                 case "catcard": return File("/Images/catcard.png", "image/png");
             }
